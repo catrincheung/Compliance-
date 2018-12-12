@@ -2,10 +2,10 @@
 ## Calculating Compliance Costs :+:
 
 - [x] Tidy Data
-- [] Calculate Median Time
-- [] Weighed Avg Hourly rate
-- [] % external costs
-- [] External costs in punds
+- [?] Calculate Median Time
+- [ ] Weighed Avg Hourly rate
+- [ ] % external costs
+- [ ] External costs in punds
 
 Survey_example is survey data which has been stripped of identifying data and randomly alterated, allowing code to be built using the same format as will be recieved. 
 Compliance.R is the R script so far. 
