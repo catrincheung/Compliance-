@@ -23,6 +23,8 @@ Convert NA to 0. Then multiple hours by 60, to get hours in minutes. Then add th
 
 ### Weighed Avg Hourly rate
 
+There are 5 classifcations of job given and other. To calculate the weighed avg other is ignored. The hourly rate for each job is taken from ASHE. This is weighed to obtain a single weighted average hourly rate.    
+
 2018
 ---
 Job Title |	Hourly rate	| Code
