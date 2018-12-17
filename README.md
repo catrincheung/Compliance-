@@ -2,8 +2,8 @@
 ## :shipit: Calculating Compliance Costs :+1:
 
 - [x] Tidy Data
-- [ ] Calculate Median Time
-- [ ] Weighed Avg Hourly rate
+- [x] Calculate Median Time
+- [x] Weighed Avg Hourly rate
 - [ ] % external costs
 - [ ] External costs in punds
 
