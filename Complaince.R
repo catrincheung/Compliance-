@@ -66,7 +66,7 @@ per_occ <- num_occ/sum(num_occ)
 whr <- sum(per_occ*Wages$`Hourly rate`)
 whr
 
-
+#Catrin testing
 
 
 
