@@ -32,6 +32,37 @@ Data$`Other (please specify)` <- NULL
 Data[10:18] <- NULL
 
 
+#### Catrin: selecting total time taken columns and creating a new dataframe
+
+Data2 <- Data[8:9]
+
+
+#### Catrin: removing the rows with NA in BOTH hours and minutes (where time has not been recorded at all). This leaves us with the columns where there is
+#### either an NA in the minutes or in the hours column, but not both. This is stored in Data3. 
+
+ind <- apply(Data2, 1, function(Data2) all(is.na(Data2)))
+Data3 <- Data2[ !ind, ]
+
+#### Catrin: Replacing all NAs in the modified dataset with 0
+
+Data3[is.na(Data3)] <- 0 
+
+#### Catrin: Creating a total minutes variable
+
+total_min <- (Data3$"Total time taken to complete Hours"*60) + Data3$"Total time taken to complete Mins"
+
+
+#### Catrin: finding median of total minutes
+
+median(total_min)
+median(total_min, na.rm = T)
+
+#### Catrin: adding total minutes to Data3 (not sure if this is necessary or not, but helps with sense checking whether the above code has worked)
+
+cbind(Data3, total_min)
+
+
+
 #Median Time 
 #Time is given in two columns, 1 for hours the other for minutes. First blank values are read in as NA, these need converting to 0. 
 #Then Hours converted to min , then hours in min added to min to get total time in minutes. Then median is found. 
